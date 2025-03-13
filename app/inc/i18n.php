@@ -34,19 +34,12 @@ $i18n->get('', 'Something, just to load the dictionary');
 $locale = str_replace('_', '-', $i18n->getLoadedLang());
 
 /* Date Format */
-//$date_format['txt_full'] = __('Date', 'FULL'); //summary in create_date_poll.php and removal date in choix_(date|autre).php
-//$date_format['txt_short'] = __('Date', 'SHORT'); // radio title
-//$date_format['txt_day'] = __('Date', 'DAY');
-//$date_format['txt_date'] = __('Date', 'DATE');
-//$date_format['txt_month_year'] = __('Date', 'MONTH_YEAR');
-//$date_format['txt_datetime_short'] = __('Date', 'DATETIME');
-
-$date_format['txt_full'] = 'eeee d MMMM y'; //summary in create_date_poll.php and removal date in choix_(date|autre).php
-$date_format['txt_short'] = 'E d MMMM y'; // radio title
-$date_format['txt_day'] = 'E d';
-$date_format['txt_date'] = ''; // Defaults to IntlDateFormatter::SHORT
-$date_format['txt_month_year'] = 'MMMM y';
-$date_format['txt_datetime_short'] = 'dd-MM-y HH:mm';
+$date_format['txt_full'] = __('Date', 'FULL'); //summary in create_date_poll.php and removal date in choix_(date|autre).php
+$date_format['txt_short'] = __('Date', 'SHORT'); // radio title
+$date_format['txt_day'] = __('Date', 'DAY');
+$date_format['txt_date'] = __('Date', 'DATE');
+$date_format['txt_month_year'] = __('Date', 'MONTH_YEAR');
+$date_format['txt_datetime_short'] = __('Date', 'DATETIME');
 
 function formatDate(string $format, $date) {
     global $locale;
